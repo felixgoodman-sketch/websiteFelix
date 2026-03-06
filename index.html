@@ -1,41 +1,55 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Basic Web Page</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1" >
-  <link href="style.css" rel="stylesheet">
-</head>
-<body>
-        <a href="./index.html" class="pages">Home</a>
-      <a href="./cardtrick.html" class="pages">Card Trick</a>
-      <a href="./cointrick.html" class="pages">Coin Tricks</a>
+   <head>
+      <title>Felix magic website</title>
+      <meta name="viewport" content="width=device-width,initial-scale=1" >
+      <link href="style.css" rel="stylesheet">
+   </head>
+   <!---this is were the main code starts--->
+   <body>
+  <div id="main">
+ <div class="header-container">
+  <img class= image id="cover" src="https://upload.wikimedia.org/wikipedia/commons/5/57/Card_trick.jpg" alt="Magic Tricks Banner" class="banner-img">
+  <h1 id=welcom>Hello</h1>
+  <div>
+    <a  class="button-nav" href="index.html" class="pages">Home</a>
+    <a  class="button-nav" href="cardtrick.html" class="pages">Card Trick</a>
+    <a  class="button-nav" href="cointrick.html" class="pages">Coin Tricks</a>
+  </div>
+</div>
       </nav>
-      <h1>Home</h1>
+      <h1 class="words">Home</h1>
       <nav>
          <ul>
-            <li><a href="#introduction">Introduction</a></li>
-            <li><a href="#need">Matereals</a></li>
+            <!--<li><a href="#introduction">Introduction</a></li>-->
+            <!--<li><a href="#need">Matereals</a></li>-->
          </ul>
       </nav>
-      <div id="introduction">
+      <div class="words" id="introduction">
          <h2>What will you learn here?</h2>
          <h3>Welcome to my website!</h3>
          <p>Here you will learn how to do the latest and greatest magic tricks using everyday items like <em>coins, cards, and rubber bands.</em></p>
       </div>
-      <div id="need">
+      <div class="words" id="need">
          <br><br>
          <h2>Matereals</h2>
          <p>So what will you need. You will defintly want a table or somewere you can put things on like a floor. You will also want the props that we are using for the tricks. These itams could be:</p>
+         </div>
+         <div>
          <ul>
             <li>Cards (try to get USPCC cards)</li>
             <li>Coins</li>
             <li>Rubber Bands</li>
             <li>Rubik's Cube</li>
-            <a href="https://www.amazon.com/Bicycle-Rider-Playing-Standard-Premium/dp/B0DKZK6NTT?ref_=ast_sto_dp&th=1&psc=1" target="_blank">These are the playing cards I recomend you start out with.</a>
+            <a class="words" href="https://www.amazon.com/Bicycle-Rider-Playing-Standard-Premium/dp/B0DKZK6NTT?ref_=ast_sto_dp&th=1&psc=1" target="_blank">These are the playing cards I recomend you start out with.</a>
          </ul>
       </div>
       <div id="media">
          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Bicycle%28standard%2Cpokersize%2Cblue%29.jpg" width=175 height=240/>
       </div>
-</body>
-</html>html
+     </div> 
+     <div id="copyright">
+      <p>Copyright 2026 Felix G</p>
+     </div>
+   </body>
+</html>
