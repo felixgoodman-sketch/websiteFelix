@@ -1,16 +1,54 @@
-.pages {
-background-color: #007bff;
+#main {
+  
+  max-width: 500px;       /* This constrains the text width */
+  margin: 0 auto;         /* This centers the "bar" in the middle */
+  background-color: white;
+  padding: 40px;
+  box-shadow: 0 0 50px rgba(0,0,0,0.5); /* Adds a shadow to make the bar pop */
+  min-height: 100vh;      /* Makes sure the bar goes all the way to the bottom */
+  opacity: .9;
+  border-radius: 80px;
+}
+
+body {
+background-image: url("https://images.pexels.com/photos/6152931/pexels-photo-6152931.jpeg");
+background-size: cover;
+background-attachment: fixed;
+
+}
+
+.words {
+  text-align: center;
+}
+
+.button-nav {
+background-color: purple;
   color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
+  padding: 10px 50px;
+  margin-top: 10px;
+  border-radius: 6px;
   cursor: pointer;
 
-  
+/* The 'Smoothness' setting */
+    transition: all 0.3s ease;  
 }
-.pages:hover {
+
+.button-nav:hover {
   background-color: red;
+
+/* The 'Grow' and 'Push' setting */
+    transform: scale(.9); 
+    margin-left: 5px;
+    margin-right: 5px;
+ 
 }
+#welcom {
+  position: absolute; /* This pulls the text out of the normal flow */
+  top: 50%;           /* Move down 50% from the top */
+  left: 50%;          /* Move in 50% from the left */
+  transform: translate(-50%, -50%); /* Perfectly centers it */
+}
+
 ul {
   text-align: left;
 }
@@ -21,9 +59,64 @@ p {
   text-align: center;
 }
 
-* {
 
 
+#welcom.image {
+  border: 20px;
+}
  
   
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.button-nav {
+
+}
+#top {
+}
+
+.header-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Keeps the banner and buttons centered */
+  width: 100%;
+}
+
+.banner-img {
+  width: 100%;
+  max-height: 300px;    
+  object-fit: cover;    
+  margin-bottom: 20px;  
+}
+
+img {
+  display: block;       /* This lets the image sit on its own line */
+  margin-left: auto;    /* Pushes it from the left into the middle */
+  margin-right: auto;   /* Pushes it from the right into the middle */
+  max-width: 100%;      /* Keeps it from overflowing the screen */
+  height: auto;
+}
+
+ul {
+  display: table;
+  margin: 0 auto; 
+  text-align: left;
+}
+
+#copyright {
+  background-color: white;
+}
+
+.button-nav {
+  display: inline-block;
+  justify-content: space-around;
+}
+
+#cover {
+  opacity: 1.0;
+  border-radius: 80px;
 }
